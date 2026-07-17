@@ -57,7 +57,7 @@ Send group status with version 2
 ```javascript
 await sock.sendMessage(target, {
      groupStatusMessage: {
-          text: "#OBITO"
+          text: "#AzzOffcial"
      }
 });
 ```
@@ -68,8 +68,8 @@ Send multiple images in a single album message:
 ```javascript
 await sock.sendMessage(target, { 
     albumMessage: [
-        { image: cihuy, caption: "#OBITO" },
-        { image: { url: "URL IMAGE" }, caption: "#OBITO" }
+        { image: cihuy, caption: "#AzzOffcial" },
+        { image: { url: "URL IMAGE" }, caption: "#AzzOffcial" }
     ] 
 }, { quoted: m });
 ```
@@ -81,14 +81,14 @@ Create and send WhatsApp event invitations:
 await sock.sendMessage(target, { 
     eventMessage: { 
         isCanceled: false, 
-        name: "#OBITO", 
-        description: "#OBITO", 
+        name: "#AzzOffcial", 
+        description: "#AzzOffcial", 
         location: { 
             degreesLatitude: 0, 
             degreesLongitude: 0, 
             name: "#OBITO" 
         }, 
-        joinLink: "https://call.whatsapp.com/video/obito2", 
+        joinLink: "https://call.whatsapp.com/video/AzzOffcial", 
         startTime: "1763019000", 
         endTime: "1763026200", 
         extraGuestsAllowed: false 
@@ -102,14 +102,14 @@ Display poll results with vote counts:
 ```javascript
 await sock.sendMessage(target, { 
     pollResultMessage: { 
-        name: "#OBITO", 
+        name: "#AzzOffcial", 
         pollVotes: [
             {
-                optionName: "#OBITO",
+                optionName: "#AzzOffcial",
                 optionVoteCount: "112233"
             },
             {
-                optionName: "#OBITO",
+                optionName: "#AzzOffcial",
                 optionVoteCount: "1"
             }
         ] 
@@ -123,14 +123,14 @@ Send basic interactive messages with copy button functionality:
 ```javascript
 await sock.sendMessage(target, {
     interactiveMessage: {
-        header: "#OBITO",
-        title: "#OBITO",
+        header: "#AzzOffcial",
+        title: "#AzzOffcial",
         footer: "telegram: @topsdominic ",
         buttons: [
             {
                 name: "cta_copy",
                 buttonParamsJson: JSON.stringify({
-                    display_text: "#OBITO",
+                    display_text: "#AzzOffcial",
                     id: "123456789",              
                     copy_code: "ABC123XYZ"
                 })
@@ -146,28 +146,28 @@ Send interactive messages with buttons, copy actions, and native flow features:
 ```javascript
 await sock.sendMessage(target, {    
     interactiveMessage: {      
-        header: "#OBITO",
-        title: "#OBITO",      
-        footer: "telegram: @topsdominic",      
+        header: "#AzzOffcial",
+        title: "#AzzOffcial",      
+        footer: "telegram: @margacrowv15",      
         image: { url: "https://example.com/image.jpg" },      
         nativeFlowMessage: {        
             messageParamsJson: JSON.stringify({          
                 limited_time_offer: {            
                     text: "idk hummmm?",            
-                    url: "https://t.me/topsdominic",            
-                    copy_code: "#OBITO",            
+                    url: "https://t.me/margacrowv15",            
+                    copy_code: "#AzzOffcial",            
                     expiration_time: Date.now() * 999          
                 },          
                 bottom_sheet: {            
                     in_thread_buttons_limit: 2,            
                     divider_indices: [1, 2, 3, 4, 5, 999],            
-                    list_title: "#OBITO",            
-                    button_title: "#OBITO"          
+                    list_title: "#AzzOffcial",            
+                    button_title: "#AzzOffcial"          
                 },          
                 tap_target_configuration: {            
                     title: " X ",            
                     description: "bomboclard",            
-                    canonical_url: "https://t.me/topsdominic",            
+                    canonical_url: "https://t.me/margacrowv15",            
                     domain: "shop.example.com",            
                     button_index: 0          
                 }        
@@ -188,14 +188,14 @@ await sock.sendMessage(target, {
                 {            
                     name: "single_select",            
                     buttonParamsJson: JSON.stringify({              
-                        title: "#OBITO",              
+                        title: "#AzzOffcial",              
                         sections: [                
                             {                  
                                 title: "title",                  
                                 highlight_label: "label",                  
                                 rows: [                    
                                     {                      
-                                        title: "@topsdominic",                      
+                                        title: "@margacrowv15",                      
                                         description: "love you",                      
                                         id: "row_2"                    
                                     }                  
@@ -225,9 +225,9 @@ Send interactive messages with thumbnail image and copy button:
 ```javascript
 await sock.sendMessage(target, {
     interactiveMessage: {
-        header: "#OBITO",
-        title: "#OBITO",
-        footer: "telegram: @topsdominic",
+        header: "#AzzOffcial",
+        title: "#AzzOffcial",
+        footer: "telegram: @margacrowv15",
         image: { url: "https://example.com/image.jpg" },
         buttons: [
             {
@@ -278,9 +278,9 @@ Send interactive messages with document from buffer (file system) - **Note: Docu
 ```javascript
 await sock.sendMessage(target, {
     interactiveMessage: {
-        header: "#OBITO",
-        title: "#OBITO",
-        footer: "telegram: @topsdominic",
+        header: "#AzzOffcial",
+        title: "#AzzOffcial",
+        footer: "telegram: @margacrowv15",
         document: fs.readFileSync("./package.json"),
         mimetype: "application/pdf",
         fileName: "topsdominic.pdf",
@@ -291,12 +291,12 @@ await sock.sendMessage(target, {
             isForwarded: false
         },
         externalAdReply: {
-            title: "#OBITO",
-            body: "#OBITO",
+            title: "#AzzOffcial",
+            body: "#AzzOffcial",
             mediaType: 3,
             thumbnailUrl: "https://example.com/image.jpg",
             mediaUrl: " X ",
-            sourceUrl: "https://t.me/topsdominic",
+            sourceUrl: "https://t.me/margacrowv15",
             showAdAttribution: true,
             renderLargerThumbnail: false         
         },
@@ -305,8 +305,8 @@ await sock.sendMessage(target, {
                 name: "cta_url",
                 buttonParamsJson: JSON.stringify({
                     display_text: "Telegram",
-                    url: "https://t.me/topsdominic",
-                    merchant_url: "https://t.me/topsdominic"
+                    url: "https://t.me/margacrowv15",
+                    merchant_url: "https://t.me/margacrowv15"
                 })
             }
         ]
@@ -320,9 +320,9 @@ Send interactive messages with document from buffer (file system) without contex
 ```javascript
 await sock.sendMessage(target, {
     interactiveMessage: {
-        header: "#OBITO",
-        title: "#OBITO",
-        footer: "telegram: @topsdominic",
+        header: "#AzzOffcial",
+        title: "#AzzOffcial",
+        footer: "telegram: @margacrowv15",
         document: fs.readFileSync("./package.json"),
         mimetype: "application/pdf",
         fileName: "topsdominic.pdf",
@@ -332,8 +332,8 @@ await sock.sendMessage(target, {
                 name: "cta_url",
                 buttonParamsJson: JSON.stringify({
                     display_text: "Telegram",
-                    url: "https://t.me/topsdominic",
-                    merchant_url: "https://t.me/topsdominic"
+                    url: "https://t.me/margacrowv15",
+                    merchant_url: "https://t.me/margacrowv15"
                 })
             }
         ]
