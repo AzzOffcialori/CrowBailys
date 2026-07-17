@@ -86,7 +86,7 @@ await sock.sendMessage(target, {
         location: { 
             degreesLatitude: 0, 
             degreesLongitude: 0, 
-            name: "#OBITO" 
+            name: "#AzzOffcial" 
         }, 
         joinLink: "https://call.whatsapp.com/video/AzzOffcial", 
         startTime: "1763019000", 
